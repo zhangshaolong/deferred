@@ -3,6 +3,7 @@
  * @author：张少龙（zhangshaolongjj@163.com）
  */
 var Deferred = function () {
+    
     // for fast find it
     var slice = Array.prototype.slice;
     // fix bind to ES5
