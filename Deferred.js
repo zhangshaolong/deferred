@@ -38,19 +38,19 @@ var Deferred = function () {
     var Promise = function (deferred) {
         this.then = function (done, fail) {
             return deferred.then(done, fail);
-        },
+        };
         this.done = function (done) {
             return deferred.done(done);
-        },
+        };
         this.fail = function (fail) {
             return deferred.fail(fail);
-        },
+        };
         this.ensure = function (done) {
             return deferred.ensure(done);
-        },
+        };
         this.state = function () {
             return deferred.state;
-        }
+        };
     };
     var Deferred = function () {
         this.state = 'pending';// pending;fulfilled;rejected
